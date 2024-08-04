@@ -45,6 +45,7 @@ body  {
     color: #FFF;
     text-transform: uppercase;
     backface-visibility: hidden;
+    margin-bottom: 60px;
 }
 
 .heading-primary-main {
@@ -72,6 +73,7 @@ body  {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 @keyframes moveInLeft {
@@ -104,4 +106,31 @@ body  {
         opacity: 1;
         transform: translate(0);
     }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+     display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    /*position: relative; */
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn-white {
+    background-color: #FFF;
+    color: #777;
 }
